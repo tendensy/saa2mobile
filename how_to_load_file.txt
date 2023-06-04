@@ -1,0 +1,17 @@
+#include "SAALoader.h"
+#include <iostream>
+
+/*
+* t.me/weikton
+*/
+
+int main() 
+{
+    SAALoader loader;
+    std::vector<byte> fileData = loader.getFileFromSAA("gta.dat", "archive.saa");
+
+    // Получаем размер (пример)
+    // Log("File size: ", fileData.size());
+
+    return 0;
+}
